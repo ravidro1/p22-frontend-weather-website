@@ -38,7 +38,10 @@ export default function Card({
         <h1 className="card-city">{city}</h1>
       </header>
       <h3 className="card-country">{country}</h3>
-      <p className="card-degree">{degree}&deg;</p>
+      <p className="card-degree">
+        {degree}
+        <sup>&deg;</sup>
+      </p>
       <div className="card-data">
         <div className="card-data-detailed">
           <p>Precipitation</p>
