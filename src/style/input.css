@@ -1,0 +1,55 @@
+.input-container {
+  display: flex;
+  overflow: hidden;
+
+  width: 50%;
+  height: 55px;
+
+  background: #fff;
+
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.input-container > input {
+  width: 80%;
+  height: 100%;
+
+  font-size: medium;
+  padding: 5px;
+}
+.input-container > button {
+  height: 60%;
+
+  background: #016d3c;
+  color: #fff;
+
+  padding-inline: 10px;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.input-container > button:hover {
+  background: #348a63;
+
+  transition: background-color 0.2s;
+}
+
+.requestError {
+  color: #ff0000;
+  font-size: large;
+  font-weight: 900;
+}
+
+@media (max-width: 1350px) {
+  .input-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .input-container {
+    width: 90%;
+  }
+}

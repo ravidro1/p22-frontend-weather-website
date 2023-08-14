@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200&display=swap");
+
+@import "App";
+@import "input";
+@import "card";
+
+* {
+  outline: none;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Heebo", sans-serif;
+}
+
+button,
+input {
+  border: none;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}

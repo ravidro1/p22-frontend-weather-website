@@ -1,0 +1,163 @@
+.card {
+  display: grid;
+  grid-template-rows: 3fr 1fr 8fr 4fr;
+
+  height: 85%;
+  aspect-ratio: 1/1.2;
+  max-width: 100%;
+
+  color: #fff;
+  background: #26737d;
+
+  border-radius: 20px;
+  padding: 50px;
+}
+
+.card > * {
+  margin: auto;
+}
+
+.card-header {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  justify-items: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+.card-city {
+  font-size: 35px;
+  grid-row: 2;
+}
+
+.card-header > button {
+  display: none;
+  justify-self: end;
+
+  height: 90%;
+  aspect-ratio: 1/1;
+
+  border-radius: 10px;
+  background: #7dabb1;
+  padding: 5px;
+}
+.card:hover > .card-header > button {
+  display: block;
+}
+
+.card-country {
+  color: #7dabb1;
+}
+.card-degree {
+  font-size: 150px;
+  font-weight: 900;
+}
+
+.card-data {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-data-detailed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-data-detailed > h3 {
+  font-weight: 900;
+}
+
+@media (max-width: 900px) {
+  .card {
+    aspect-ratio: auto;
+    height: 85%;
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  .card {
+    grid-template-rows: 2fr 1fr 6fr 6fr;
+
+    width: 95%;
+
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .card-city {
+    font-size: 35px;
+  }
+
+  .card-degree {
+    font-size: 90px;
+  }
+
+  .card-data {
+    justify-content: space-around;
+    flex-direction: column;
+
+    width: 100%;
+  }
+}
+
+@media (max-height: 650px) {
+  .card {
+    height: 90%;
+    max-width: 95%;
+    aspect-ratio: 1/1;
+    padding: 35px;
+  }
+
+  .card-city {
+    font-size: 30px;
+  }
+
+  .card-country {
+    font-size: 20px;
+  }
+  .card-degree {
+    font-size: 100px;
+    font-weight: 900;
+  }
+
+  .card-data-detailed > * {
+    font-size: 17px;
+  }
+
+  .card-data-detailed > h3 {
+    font-weight: 900;
+  }
+}
+
+@media (max-height: 420px) {
+  .card {
+    height: 100%;
+    padding: 15px;
+  }
+
+  .card-city {
+    font-size: 25px;
+  }
+
+  .card-country {
+    font-size: 15px;
+  }
+  .card-degree {
+    font-size: 60px;
+    font-weight: 900;
+  }
+
+  .card-data-detailed > * {
+    font-size: 12px;
+  }
+
+  .card-data-detailed > h3 {
+    font-weight: 900;
+  }
+}
