@@ -14,6 +14,20 @@ export default function Input({
     setRequestError(null);
   };
 
+  const clickTheCheckButton = () => {
+    if (!cityInputValue) {
+      setRequestError("You must enter a city before clicking the button");
+      return;
+    }
+    fetchWeatherData(
+      setLoading,
+      setWeatherData,
+      setRequestError,
+      setCityInputValue,
+      cityInputValue
+    );
+  };
+
   return (
     <div>
       <label className="input-label" htmlFor="input-field">
@@ -29,19 +43,7 @@ export default function Input({
           onChange={changeInputValue}
           type="text"
         />
-        <button
-          onClick={() =>
-            fetchWeatherData(
-              setLoading,
-              setWeatherData,
-              setRequestError,
-              setCityInputValue,
-              cityInputValue
-            )
-          }
-        >
-          Check
-        </button>
+        <button onClick={clickTheCheckButton}>Check</button>
       </form>
       <p className="requestError"> {requestError && requestError} </p>
     </div>
