@@ -35,12 +35,17 @@
   display: none;
   justify-self: end;
 
-  height: 90%;
+  height: 100%;
+
   aspect-ratio: 1/1;
 
   border-radius: 10px;
   background: #7dabb1;
-  padding: 5px;
+  /* padding: minmax(10px, 100px); */
+  /* padding: 5px; */
+}
+.card-header > button > img {
+  padding: 0;
 }
 .card:hover > .card-header > button {
   display: block;
@@ -82,7 +87,7 @@
 
 @media (max-width: 500px) {
   .card {
-    grid-template-rows: 2fr 1fr 6fr 6fr;
+    grid-template-rows: 3fr 1fr 6fr 6fr;
 
     width: 95%;
 
