@@ -11,6 +11,8 @@
 
   border-radius: 20px;
   padding: 50px;
+
+  overflow: auto;
 }
 
 .card > * {
@@ -29,10 +31,11 @@
 .card-city {
   font-size: 35px;
   grid-row: 2;
+
+  overflow: hidden;
 }
 
 .card-header > button {
-  display: none;
   justify-self: end;
 
   height: 100%;
@@ -41,14 +44,13 @@
 
   border-radius: 10px;
   background: #7dabb1;
-  /* padding: minmax(10px, 100px); */
-  /* padding: 5px; */
+  padding: 5px;
+
+  visibility: hidden;
 }
-.card-header > button > img {
-  padding: 0;
-}
+
 .card:hover > .card-header > button {
-  display: block;
+  visibility: visible;
 }
 
 .card-country {
