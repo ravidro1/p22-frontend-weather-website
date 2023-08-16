@@ -2,8 +2,8 @@
 
 ###### Clone the repository
 
-###### create .env file and add - <mark> VITE_BACKEND_URL="http://localhost:8000" </mark>
+###### create .env file and add - `VITE_BACKEND_URL="http://localhost:8000"`
 
-###### **_npm i_**
+###### `npm i`
 
-###### **_npm start_**
+###### `npm start`
