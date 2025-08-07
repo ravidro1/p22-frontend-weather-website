@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { fetchWeatherData } from "../GlobalFunctions";
+import { fetchWeatherDataByCity } from "../GlobalFunctions";
 
 export default function Card({
   loading,
@@ -24,7 +24,7 @@ export default function Card({
       <header className="card-header">
         <button
           onClick={() =>
-            fetchWeatherData(
+            fetchWeatherDataByCity(
               setLoading,
               setWeatherData,
               setRequestError,
